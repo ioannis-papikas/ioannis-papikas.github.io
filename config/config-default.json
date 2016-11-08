@@ -1,0 +1,37 @@
+{
+    "name": "config-default",
+    "type": "configuration",
+    "environment": "default",
+    "paths": {
+        "source": {
+            "base_dir": "app"
+        },
+        "routes": {
+            "base_dir": "resources/routes",
+            "base_file": "main.php"
+        },
+        "views": {
+            "base_dir": "resources/views"
+        },
+        "lang": {
+            "base_dir": "resources/lang"
+        },
+        "storage": {
+            "base_dir": "storage"
+        },
+        "logger": {
+            "base_dir": "logs",
+            "debug": "debug.log",
+            "error": "error.log",
+            "max_files_count": 2
+        }
+    },
+    "localization": {
+        "locale": {
+            "default_locale": "en_US"
+        },
+        "datetime": {
+            "default_timezone": "GMT"
+        }
+    }
+}
