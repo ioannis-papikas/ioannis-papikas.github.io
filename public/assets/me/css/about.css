@@ -1,0 +1,68 @@
+.ipapikas-section-about.container {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle; }
+.ipapikas-section-about .about-item {
+  margin: 25px 0;
+  overflow: auto; }
+  .ipapikas-section-about .about-item .about-logo {
+    width: 25%;
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .ipapikas-section-about .about-item .about-logo img {
+      max-width: 90%;
+      margin: 9px auto;
+      display: block;
+      max-height: 22px; }
+  .ipapikas-section-about .about-item .about-title {
+    color: #1d4a89;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 2px;
+    margin-bottom: 5px; }
+  .ipapikas-section-about .about-item.work.evertracker .about-logo {
+    background-color: #194a9a;
+    border-color: #194a9a; }
+  .ipapikas-section-about .about-item.work.drovio .about-logo {
+    border-color: #ccc; }
+  .ipapikas-section-about .about-item.work.redback .about-logo {
+    border-color: #c00403; }
+  .ipapikas-section-about .about-item.work.mls .about-logo {
+    border-color: #e74e0f; }
+  .ipapikas-section-about .about-item.work.e-satisfaction .about-logo {
+    background-color: #5077a8;
+    border-color: #5077a8; }
+  .ipapikas-section-about .about-item.work.public .about-logo {
+    background-color: #f15a22;
+    border-color: #f15a22; }
+  .ipapikas-section-about .about-item.edu.ihu .about-logo {
+    background-color: #203c61;
+    border-color: #203c61; }
+  .ipapikas-section-about .about-item.edu.uom .about-logo {
+    background-color: #5173b3;
+    border-color: #203c61; }
+
+@media screen and (max-width: 600px) {
+  .ipapikas-section-about .about-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .ipapikas-section-about .about-item .about-title {
+      font-size: 0.9em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .ipapikas-section-about .about-item .about-subtitle {
+      font-size: 0.8em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; } }
+
+/*# sourceMappingURL=about.css.map */

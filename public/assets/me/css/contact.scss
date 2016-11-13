@@ -1,0 +1,12 @@
+.ipapikas-section-contact {
+    &.container {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ipapikas-section-contact {
+    }
+}

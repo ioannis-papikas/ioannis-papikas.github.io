@@ -31,11 +31,9 @@ class PageController extends BaseController
      * @var string[]
      */
     protected $titles = [
-        'how-it-works' => 'RateIn - How it works',
-        'faq' => 'RateIn - FAQ',
-        'pricing' => 'RateIn - Pricing',
-        'team' => 'RateIn - Team',
-        'terms-and-privacy' => 'RateIn - Terms and Privacy'
+        'about' => 'About Me',
+        'portfolio' => 'Portfolio',
+        'contact' => 'Contact Me'
     ];
 
     /**

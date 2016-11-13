@@ -82,6 +82,82 @@
     background-image: -webkit-linear-gradient(left top, rgb(29, 74, 137), rgb(120, 164, 199));
 }
 
+.white-box {
+    display: inline-block;
+    min-width: 250px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 80%;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+    position: relative;
+    text-align: left;
+
+    .box-head {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+        z-index: 3;
+        text-align: center;
+
+        .image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            margin: 0 auto;
+        }
+        .image img {
+            width: inherit;
+            height: inherit;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+        }
+    }
+    .box-body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+        overflow: auto;
+        background: #fff;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        padding: 20px;
+        margin-top: 60px;
+        padding-top: 80px;
+        color: #555;
+
+        h1 {
+            font-size: 1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 0.9em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+        a {
+            text-decoration: underline !important;
+        }
+    }
+}
+
 .page-footer {
     & {
         position: absolute;
@@ -130,7 +206,7 @@
         -moz-transition: all .2s ease-in-out;
 
         &.highlight {
-            background: rgba(29, 74, 137, 0.6);
+            background: rgba(29, 74, 137, 0.7);
             transition: all .2s ease-in-out;
             -webkit-transition: all .2s ease-in-out;
             -moz-transition: all .2s ease-in-out;
@@ -153,6 +229,18 @@
                     text-align: center;
                 }
             }
+        }
+    }
+    .white-box {
+        .box-head {
+            .image {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .box-body {
+            margin-top: 40px;
+            padding-top: 60px;
         }
     }
     .page-footer {

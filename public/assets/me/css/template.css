@@ -69,6 +69,73 @@
   background-image: -webkit-gradient(linear, left top, right bottom, from(#1d4a89), to(#78a4c7));
   background-image: -webkit-linear-gradient(left top, #1d4a89, #78a4c7); }
 
+.white-box {
+  display: inline-block;
+  min-width: 250px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 80%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  text-align: left; }
+  .white-box .box-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 3;
+    text-align: center; }
+    .white-box .box-head .image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      margin: 0 auto; }
+    .white-box .box-head .image img {
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%; }
+  .white-box .box-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: auto;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 20px;
+    margin-top: 60px;
+    padding-top: 80px;
+    color: #555; }
+    .white-box .box-body h1 {
+      font-size: 1em;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center; }
+    .white-box .box-body h2 {
+      font-size: 0.9em;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .white-box .box-body p {
+      font-size: 0.9em; }
+    .white-box .box-body a {
+      text-decoration: underline !important; }
+
 .page-footer {
   position: absolute;
   bottom: 0;
@@ -109,7 +176,7 @@
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out; }
     .page-nav-menu.highlight {
-      background: rgba(29, 74, 137, 0.6);
+      background: rgba(29, 74, 137, 0.7);
       transition: all .2s ease-in-out;
       -webkit-transition: all .2s ease-in-out;
       -moz-transition: all .2s ease-in-out; }
@@ -125,6 +192,13 @@
           display: block;
           margin: 3px 0;
           text-align: center; }
+
+  .white-box .box-head .image {
+    width: 80px;
+    height: 80px; }
+  .white-box .box-body {
+    margin-top: 40px;
+    padding-top: 60px; }
 
   .page-footer span.desktop {
     display: none !important; } }

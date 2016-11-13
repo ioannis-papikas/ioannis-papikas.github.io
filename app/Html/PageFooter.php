@@ -36,7 +36,7 @@ class PageFooter extends HTMLElement
         $bull = $this->separator();
         $this->append($bull);
 
-        $item = $this->getHTMLDocument()->getHTMLFactory()->buildWeblink('mailto:ipapikas@ipapikas.me?Subject=Hello', '_self', 'Say Hello', '', '');
+        $item = $this->getHTMLDocument()->getHTMLFactory()->buildWeblink('mailto:ioannis@ipapikas.me?Subject=Hello', '_self', 'Say Hello', '', '');
         $this->append($item);
 
         return $this;

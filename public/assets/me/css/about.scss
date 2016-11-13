@@ -1,0 +1,115 @@
+.ipapikas-section-about {
+    &.container {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .about-item {
+        margin: 25px 0;
+        overflow: auto;
+
+        .about-logo {
+            width: 25%;
+            float: left;
+            margin-right: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+
+            img {
+                max-width: 90%;
+                margin: 9px auto;
+                display: block;
+                max-height: 22px;
+            }
+        }
+
+        .about-title {
+            color: rgb(29, 74, 137);
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-top: 2px;
+            margin-bottom: 5px;
+        }
+
+        &.work {
+            &.evertracker {
+                .about-logo {
+                    background-color: #194a9a;
+                    border-color: #194a9a;
+                }
+            }
+
+            &.drovio {
+                .about-logo {
+                    border-color: #ccc;
+                }
+            }
+
+            &.redback {
+                .about-logo {
+                    border-color: #c00403;
+                }
+            }
+
+            &.mls {
+                .about-logo {
+                    border-color: #e74e0f;
+                }
+            }
+
+            &.e-satisfaction {
+                .about-logo {
+                    background-color: #5077a8;
+                    border-color: #5077a8;
+                }
+            }
+            &.public {
+                .about-logo {
+                    background-color: #f15a22;
+                    border-color: #f15a22;
+                }
+            }
+        }
+        &.edu {
+            &.ihu {
+                .about-logo {
+                    background-color: #203c61;
+                    border-color: #203c61;
+                }
+            }
+            &.uom {
+                .about-logo {
+                    background-color: #5173b3;
+                    border-color: #5173b3;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ipapikas-section-about {
+        .about-item {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            .about-title {
+                font-size: 0.9em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .about-subtitle {
+                font-size: 0.8em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
