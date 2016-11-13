@@ -5,7 +5,8 @@
   vertical-align: middle; }
 .ipapikas-homepage .content {
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  padding: 10px; }
 .ipapikas-homepage .logo {
   width: 200px;
   height: 200px;

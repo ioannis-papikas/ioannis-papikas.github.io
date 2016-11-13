@@ -126,11 +126,13 @@
       font-size: 1em;
       font-weight: 700;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      clear: both; }
     .white-box .box-body h2 {
       font-size: 0.9em;
       font-weight: 700;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      clear: both; }
     .white-box .box-body p {
       font-size: 0.9em; }
     .white-box .box-body a {

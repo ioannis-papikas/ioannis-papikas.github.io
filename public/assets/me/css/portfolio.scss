@@ -4,9 +4,89 @@
         display: table-cell;
         vertical-align: middle;
     }
+
+    .project-item {
+        margin: 10px;
+        overflow: auto;
+        float: left;
+        width: 25%;
+        text-align: center;
+
+        .project-logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+            display: flex;
+            align-items: center;
+
+            img {
+                max-width: 90%;
+                margin: 9px auto;
+                display: block;
+                max-height: 30px;
+            }
+        }
+
+        .project-title {
+            color: rgb(29, 74, 137);
+            font-size: 1.1em;
+            font-weight: 700;
+            margin: 5px 0;
+        }
+
+        .project-link {
+            display: block;
+            margin: 5px 0;
+        }
+
+        &.drovio {
+            .project-logo {
+                border-color: #ccc;
+            }
+        }
+
+        &.loginbox {
+            .project-logo {
+                background-color: #1d2d3c;
+                border-color: #1d2d3c;
+            }
+        }
+        &.panda {
+            .project-logo {
+                background-color: #231f20;
+                border-color: #231f20;
+            }
+
+            img {
+                max-height: 50px;
+                background-color: #fff;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border: 1px solid #fff;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
     .ipapikas-section-portfolio {
+        .project-item {
+            width: 100%;
+            display: block;
+            float: none;
+
+            .project-title {
+                font-size: 0.9em;
+            }
+            .project-subtitle {
+                font-size: 0.8em;
+            }
+        }
     }
 }
