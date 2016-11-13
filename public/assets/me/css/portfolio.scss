@@ -58,6 +58,16 @@
                 border-color: #1d2d3c;
             }
         }
+        &.ratein {
+            .project-logo {
+                background-color: #335f7f;
+                border-color: #335f7f;
+            }
+
+            img {
+                max-height: 50px;
+            }
+        }
         &.panda {
             .project-logo {
                 background-color: #231f20;

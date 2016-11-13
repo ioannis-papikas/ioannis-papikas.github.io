@@ -43,6 +43,11 @@
   .ipapikas-section-portfolio .project-item.loginbox .project-logo {
     background-color: #1d2d3c;
     border-color: #1d2d3c; }
+  .ipapikas-section-portfolio .project-item.ratein .project-logo {
+    background-color: #335f7f;
+    border-color: #335f7f; }
+  .ipapikas-section-portfolio .project-item.ratein img {
+    max-height: 50px; }
   .ipapikas-section-portfolio .project-item.panda .project-logo {
     background-color: #231f20;
     border-color: #231f20; }
