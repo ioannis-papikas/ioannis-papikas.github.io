@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "580bac60163d9956943746c7d1712aef",
-    "content-hash": "e70d4df8498a7a4754562e7ea6593273",
+    "hash": "f3ba72b64e1e00f7293ef99579bf0e2b",
+    "content-hash": "8511c571b9fc24bbcf53e872713460b2",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -113,21 +113,69 @@
             "time": "2016-07-29 03:23:52"
         },
         {
-            "name": "panda/framework",
-            "version": "v1.2.4",
+            "name": "panda/contracts",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/PandaPlatform/framework.git",
-                "reference": "849177041a58ccac3d91adeddda962e703de3f04"
+                "url": "https://github.com/PandaPlatform/panda-contracts.git",
+                "reference": "110139a7d690221c4a23e38d731804d57db55a6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PandaPlatform/framework/zipball/849177041a58ccac3d91adeddda962e703de3f04",
-                "reference": "849177041a58ccac3d91adeddda962e703de3f04",
+                "url": "https://api.github.com/repos/PandaPlatform/panda-contracts/zipball/110139a7d690221c4a23e38d731804d57db55a6a",
+                "reference": "110139a7d690221c4a23e38d731804d57db55a6a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/http-foundation": "2.8.*|3.0.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Panda\\Contracts\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ioannis Papikas",
+                    "email": "papikas.ioan@gmail.com"
+                }
+            ],
+            "description": "The Panda PHP Framework.",
+            "homepage": "http://pandaphp.org",
+            "keywords": [
+                "Panda",
+                "framework"
+            ],
+            "time": "2016-10-02 09:18:40"
+        },
+        {
+            "name": "panda/framework",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PandaPlatform/panda-framework.git",
+                "reference": "ae00f65b4ec65171b985e6a94dafc117946c455d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PandaPlatform/panda-framework/zipball/ae00f65b4ec65171b985e6a94dafc117946c455d",
+                "reference": "ae00f65b4ec65171b985e6a94dafc117946c455d",
                 "shasum": ""
             },
             "require": {
                 "monolog/monolog": "~1.19",
+                "panda/contracts": "~1.0",
+                "panda/helpers": "~1.0",
+                "panda/l10n": "~1.0",
                 "php": ">=5.5.9",
                 "php-di/php-di": "5.2.*",
                 "psr/http-message": "~1.0",
@@ -165,7 +213,136 @@
                 "Panda",
                 "framework"
             ],
-            "time": "2016-08-01 17:21:56"
+            "time": "2016-10-05 22:54:27"
+        },
+        {
+            "name": "panda/helpers",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PandaPlatform/panda-helpers.git",
+                "reference": "7dcca5de01dcff218c7543b2f7fdc7b4f3f0f894"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PandaPlatform/panda-helpers/zipball/7dcca5de01dcff218c7543b2f7fdc7b4f3f0f894",
+                "reference": "7dcca5de01dcff218c7543b2f7fdc7b4f3f0f894",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Panda\\Helpers\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ioannis Papikas",
+                    "email": "papikas.ioan@gmail.com"
+                }
+            ],
+            "description": "The Panda PHP Framework Helpers component.",
+            "homepage": "http://pandaphp.org",
+            "time": "2016-10-02 10:32:58"
+        },
+        {
+            "name": "panda/l10n",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PandaPlatform/panda-l10n.git",
+                "reference": "8119d9ddc98cefebf5022b294d69fc17b5723d3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PandaPlatform/panda-l10n/zipball/8119d9ddc98cefebf5022b294d69fc17b5723d3a",
+                "reference": "8119d9ddc98cefebf5022b294d69fc17b5723d3a",
+                "shasum": ""
+            },
+            "require": {
+                "panda/contracts": "^1.0",
+                "panda/helpers": "^1.0",
+                "php": ">=5.5.9",
+                "symfony/http-foundation": "2.8.*|3.0.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Panda\\Localization\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ioannis Papikas",
+                    "email": "papikas.ioan@gmail.com"
+                }
+            ],
+            "description": "The Panda PHP Framework Localization component.",
+            "homepage": "http://pandaphp.org",
+            "time": "2016-10-02 10:35:54"
+        },
+        {
+            "name": "panda/ui",
+            "version": "v1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PandaPlatform/panda-ui-be.git",
+                "reference": "7d03b2d8f6b3c2219dcf22f98ab34b36fe149992"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PandaPlatform/panda-ui-be/zipball/7d03b2d8f6b3c2219dcf22f98ab34b36fe149992",
+                "reference": "7d03b2d8f6b3c2219dcf22f98ab34b36fe149992",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/css-selector": "~3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Panda\\Ui\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ioannis Papikas",
+                    "email": "papikas.ioan@gmail.com"
+                }
+            ],
+            "description": "The Panda framework ui component.",
+            "homepage": "http://pandaphp.org",
+            "time": "2016-10-16 10:49:16"
         },
         {
             "name": "php-di/invoker",
@@ -356,22 +533,30 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=5.3.0"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -385,25 +570,79 @@
                 }
             ],
             "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
             "keywords": [
                 "log",
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2016-10-10 12:19:37"
         },
         {
-            "name": "symfony/debug",
-            "version": "v3.1.4",
+            "name": "symfony/css-selector",
+            "version": "v3.1.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/debug.git",
-                "reference": "34f6ac18c2974ca5fce68adf419ee7d15def6f11"
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "ca809c64072e0fe61c1c7fb3c76cdc32265042ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/34f6ac18c2974ca5fce68adf419ee7d15def6f11",
-                "reference": "34f6ac18c2974ca5fce68adf419ee7d15def6f11",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/ca809c64072e0fe61c1c7fb3c76cdc32265042ac",
+                "reference": "ca809c64072e0fe61c1c7fb3c76cdc32265042ac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony CssSelector Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-09-06 11:02:40"
+        },
+        {
+            "name": "symfony/debug",
+            "version": "v3.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/debug.git",
+                "reference": "e2b3f74a67fc928adc3c1b9027f73e1bc01190a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/e2b3f74a67fc928adc3c1b9027f73e1bc01190a8",
+                "reference": "e2b3f74a67fc928adc3c1b9027f73e1bc01190a8",
                 "shasum": ""
             },
             "require": {
@@ -447,20 +686,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-08-23 13:39:15"
+            "time": "2016-09-06 11:02:40"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.1.4",
+            "version": "v3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "c0c00c80b3a69132c4e55c3e7db32b4a387615e5"
+                "reference": "28b0832b2553ffb80cabef6a7a812ff1e670c0bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/c0c00c80b3a69132c4e55c3e7db32b4a387615e5",
-                "reference": "c0c00c80b3a69132c4e55c3e7db32b4a387615e5",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/28b0832b2553ffb80cabef6a7a812ff1e670c0bc",
+                "reference": "28b0832b2553ffb80cabef6a7a812ff1e670c0bc",
                 "shasum": ""
             },
             "require": {
@@ -507,7 +746,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-19 10:45:57"
+            "time": "2016-10-13 06:28:43"
         },
         {
             "name": "symfony/http-foundation",
@@ -890,16 +1129,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "9270140b940ff02e58ec577c237274e92cd40cdd"
+                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/9270140b940ff02e58ec577c237274e92cd40cdd",
-                "reference": "9270140b940ff02e58ec577c237274e92cd40cdd",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/8331b5efe816ae05461b7ca1e721c01b46bafb3e",
+                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e",
                 "shasum": ""
             },
             "require": {
@@ -931,7 +1170,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2016-06-10 09:48:41"
+            "time": "2016-09-30 07:12:33"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -1787,16 +2026,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.4",
+            "version": "v3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d"
+                "reference": "7ff51b06c6c3d5cc6686df69004a42c69df09e27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/f291ed25eb1435bddbe8a96caaef16469c2a092d",
-                "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/7ff51b06c6c3d5cc6686df69004a42c69df09e27",
+                "reference": "7ff51b06c6c3d5cc6686df69004a42c69df09e27",
                 "shasum": ""
             },
             "require": {
@@ -1832,7 +2071,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-02 02:12:52"
+            "time": "2016-10-24 18:41:13"
         },
         {
             "name": "webmozart/assert",

@@ -35,6 +35,9 @@ $app = require_once(__DIR__ . '/../boot/app.php');
  */
 $kernel = $app->make(\Panda\Contracts\Http\Kernel::class);
 
+// Add application bootstrappers
+$kernel->addExternalBootstrapper(\App\Boot\Bindings::class);
+
 /**
  * Handle the current request and get the generated
  * response from the routes.

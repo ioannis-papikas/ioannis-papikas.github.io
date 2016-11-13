@@ -1,0 +1,163 @@
+.page-nav-menu {
+    & {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+        z-index: 10;
+    }
+    .middleContainer {
+        & {
+            max-width: 1200px;
+            overflow: auto;
+            margin: 0 auto;
+            padding: 15px 10px;
+        }
+        .toggle_menu {
+            display: none;
+            float: right;
+            width: 32px;
+            height: 32px;
+            margin: 4px;
+            background: url('../images/menu.svg') no-repeat center;
+            background-size: cover;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .navMenu {
+            & {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                line-height: 40px;
+                overflow: auto;
+                text-align: center;
+            }
+            .menuItem {
+                line-height: 40px;
+                margin: 0 7px;
+                display: inline-block;
+            }
+            .menuItem a {
+                line-height: 36px;
+                margin: 2px 0;
+                font-size: 1.2em;
+                cursor: pointer;
+                display: block;
+                color: #fff;
+                transition: all .2s ease-in-out;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                padding: 0 10px;
+                border-bottom: 2px solid transparent;
+            }
+            .menuItem a:hover {
+                transition: all .2s ease-in-out;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                border-bottom: 2px solid #fff;
+            }
+            .menuItem.menu-back a {
+                font-weight: bold;
+                color: #335f7f;
+                background: #fff;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                box-shadow: 0 0 2px 0 rgba(0, 0, 0, .16), 0 2px 4px 0 rgba(0, 0, 0, .16);
+                -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, .16), 0 2px 4px 0 rgba(0, 0, 0, .16);
+                -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, .16), 0 2px 4px 0 rgba(0, 0, 0, .16);
+            }
+        }
+    }
+}
+
+.page-view-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: table;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(29, 74, 137)), to(rgb(120, 164, 199)));
+    background-image: -webkit-linear-gradient(left top, rgb(29, 74, 137), rgb(120, 164, 199));
+}
+
+.page-footer {
+    & {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+        z-index: 10;
+        text-align: center;
+        color: #fff;
+        padding: 15px 0;
+    }
+    * {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    a {
+        color: #fff;
+        font-weight: normal;
+        display: inline-block;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.noDisplay {
+    display: none !important;
+}
+
+.fLeft {
+    float: left;
+}
+
+.fRight {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .page-nav-menu .middleContainer .logo .title {
+        display: none;
+    }
+    .page-nav-menu {
+        transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+
+        &.highlight {
+            background: rgba(29, 74, 137, 0.6);
+            transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+        }
+
+        .middleContainer {
+            padding: 10px;
+
+            .toggle_menu {
+                display: block;
+            }
+            .navMenu.toggle {
+                display: none;
+                float: none;
+                clear: both;
+
+                .menuItem {
+                    display: block;
+                    margin: 3px 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .page-footer {
+        span.desktop {
+            display: none !important;
+        }
+    }
+}

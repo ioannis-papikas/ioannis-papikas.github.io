@@ -11,10 +11,6 @@
 
 namespace App\Controllers;
 
-use Panda\Http\Response;
-use Panda\Routing\Controller;
-use Panda\Support\Facades\View;
-
 /**
  * Class IndexController
  *
@@ -22,13 +18,17 @@ use Panda\Support\Facades\View;
  *
  * @version 0.1
  */
-class IndexController extends BaseController
+class IndexController extends PageController
 {
     /**
      * @return mixed
      */
     public function index()
     {
-        return View::load("index")->getOutput();
+        // Create the page template
+        $this->buildPage('Ioannis Papikas', 'index');
+        $this->getPage()->addStyle('/assets/me/css/index.css');
+
+        return $this->getPage()->getHTML();
     }
 }

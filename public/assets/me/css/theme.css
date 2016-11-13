@@ -1,0 +1,30 @@
+html, body {
+  height: 100%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em !important;
+  line-height: initial !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-weight: 400; }
+
+a, a.visited, a:hover {
+  text-decoration: none !important;
+  outline: none !important;
+  color: #353535; }
+
+a img {
+  border: none !important;
+  outline: none !important; }
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px; }
+
+::-webkit-scrollbar-thumb {
+  background: #335f7f; }
+
+/*# sourceMappingURL=theme.css.map */

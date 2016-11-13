@@ -1,0 +1,93 @@
+.ipapikas-homepage {
+    &.container {
+        font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .content {
+        text-align: center;
+        display: inline-block;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+    }
+
+    .logo img {
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border: 2px solid #ccc;
+    }
+
+    .title {
+        font-size: 75px;
+        color: #fff;
+    }
+
+    .subtitle {
+        font-size: 42px;
+        color: #fff;
+    }
+
+    .social {
+        text-align: center;
+        margin-top: 20px;
+
+        .social-link {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            margin: 0 5px;
+            opacity: 0.6;
+            background: url('../images/social-sprite-light.svg') no-repeat center;
+            background-size: cover;
+            transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+        }
+        .social-link:hover {
+            opacity: 1;
+            transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+        }
+        .social-link.facebook {
+            background-position: 0 0;
+        }
+        .social-link.twitter {
+            background-position: 0 -144px;
+        }
+        .social-link.linkedin {
+            background-position: 0 -196px;
+        }
+        .social-link.github {
+            background-position: 0 -96px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ipapikas-homepage {
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+        .title {
+            font-size: 40px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+        }
+    }
+}
