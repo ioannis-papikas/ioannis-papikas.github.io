@@ -58,6 +58,14 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border: 1px solid #fff; }
+  .ipapikas-section-portfolio .project-item.github .project-logo {
+    background-color: #f5f5f5;
+    border-color: #231f20; }
+  .ipapikas-section-portfolio .project-item.github img {
+    max-height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%; }
 
 @media screen and (max-width: 600px) {
   .ipapikas-section-portfolio .project-item {
