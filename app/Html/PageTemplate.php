@@ -87,7 +87,7 @@ class PageTemplate extends HTMLPage
         $this->addStyle('/assets/me/css/template.css');
 
         $this->addScript('/assets/me/js/main.js');
-        //$this->addScript('/assets/me/js/ga.js');
+        $this->addScript('/assets/me/js/ga.js');
     }
 
     /**
