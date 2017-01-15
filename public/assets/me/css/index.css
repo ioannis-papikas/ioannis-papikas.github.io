@@ -54,6 +54,8 @@
     background-position: 0 -196px; }
   .ipapikas-homepage .social .social-link.github {
     background-position: 0 -96px; }
+  .ipapikas-homepage .social .social-link.medium {
+    background-position: 0 -288px; }
 
 @media screen and (max-width: 600px) {
   .ipapikas-homepage .logo {
