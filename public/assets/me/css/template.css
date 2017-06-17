@@ -173,27 +173,8 @@
   .page-nav-menu .middleContainer .logo .title {
     display: none; }
 
-  .page-nav-menu {
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out; }
-    .page-nav-menu.highlight {
-      background: rgba(29, 74, 137, 0.7);
-      transition: all .2s ease-in-out;
-      -webkit-transition: all .2s ease-in-out;
-      -moz-transition: all .2s ease-in-out; }
-    .page-nav-menu .middleContainer {
-      padding: 10px; }
-      .page-nav-menu .middleContainer .toggle_menu {
-        display: block; }
-      .page-nav-menu .middleContainer .navMenu.toggle {
-        display: none;
-        float: none;
-        clear: both; }
-        .page-nav-menu .middleContainer .navMenu.toggle .menuItem {
-          display: block;
-          margin: 3px 0;
-          text-align: center; }
+  .page-nav-menu .middleContainer .navMenu .menuItem a {
+    font-size: 1.1em; }
 
   .white-box .box-head .image {
     width: 80px;

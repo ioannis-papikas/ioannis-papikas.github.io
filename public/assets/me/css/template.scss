@@ -203,33 +203,9 @@
         display: none;
     }
     .page-nav-menu {
-        transition: all .2s ease-in-out;
-        -webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out;
-
-        &.highlight {
-            background: rgba(29, 74, 137, 0.7);
-            transition: all .2s ease-in-out;
-            -webkit-transition: all .2s ease-in-out;
-            -moz-transition: all .2s ease-in-out;
-        }
-
         .middleContainer {
-            padding: 10px;
-
-            .toggle_menu {
-                display: block;
-            }
-            .navMenu.toggle {
-                display: none;
-                float: none;
-                clear: both;
-
-                .menuItem {
-                    display: block;
-                    margin: 3px 0;
-                    text-align: center;
-                }
+            .navMenu .menuItem a {
+                font-size: 1.1em;
             }
         }
     }
